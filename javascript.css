@@ -1,0 +1,38 @@
+.headerColor{
+    background-color: rgb(36, 177, 233);
+}
+.headerText{
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.BlankDiv{
+    height: 300px;
+    width: 1300px;
+    background-color: rgb(99, 98, 98);
+    border: 2px solid black;
+}
+.text-Width{
+    width: 100px;
+}
+.Input-Width{
+    width: 325px;
+     border: 1px solid gray;
+}
+.right-text-width{
+    width: 140px;
+}
+#myTable{
+    border: 1px solid black;
+}
+#TableDisplay{
+   position: relative;
+   left: -290px;
+   display: none;
+}

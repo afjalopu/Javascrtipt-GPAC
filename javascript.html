@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="javascript.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="headerColor">
+         <section class="header py-3" >
+             <div>
+                <h3 class="headerText ms-5" >Purchase Invoice</h3>
+             </div>
+             <div class="text-start d-flex me-5 ">
+                <div class="form-check me-4">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Default radio
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Default checked radio
+                    </label>
+                  </div>
+             </div>
+         </section>
+    </header>
+  <main class="main p-4">
+    <div class="p-2">
+           <div class="input-group mb-3 w-75">
+                <h5 class="mx-2 my-1 text-Width">Date</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+           <div class="input-group mb-3   w-75">
+                <h5 class="mx-1 my-1">Voucher No</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+           <div class="input-group mb-3   w-75">
+                <h5 class="mx-2 my-1 text-Width">Project</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+           <div class="input-group mb-3  w-75">
+                <h5 class="mx-2 my-1 text-Width">Supplier</h5>
+                 <input type="search" class="Input-Width" id="InputField" onfocus="dataList()" list="DataListSports" />
+                <datalist id="DataListSports" >
+
+                </datalist>
+
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+
+            </div>
+
+           <div class="input-group mb-3   w-75">
+                <h5 class="mx-2 my-1 text-Width">Item Code</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+           <div class="input-group mb-3 w-75">
+                <h5 class="mx-2 my-1 text-Width">Item No</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+           <div class="input-group mb-3 w-75">
+                <h5 class="mx-2 my-1 text-Width">Go Down</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="p-4">
+           <div class="input-group mb-3 w-75">
+                <h5 class="my-1 right-text-width">P.O No</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <table class="table table-striped w-50 mx-auto" id="TableDisplay">
+                  <thead id="myHeader">
+                    <tr class="bg-info">
+                      <div>
+                         <th class="col">Index</th>
+                         <th class="col">Name</th>
+                         <th class="col">Company</th>
+                         <th class="col">Email</th>
+                      </div>
+                    </tr>
+                  </thead>
+                  <tbody id="myTable" >
+
+                  </tbody>
+              </table>
+              
+            </div>
+           <div class="input-group mb-3 w-75">
+                <h5 class=" my-1 right-text-width">Batch No</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+           <div class="input-group mb-3 w-75">
+                <h5 class="my-1 right-text-width">Quantity</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+
+           <div class="input-group mb-3 d-flex">
+                 <h5 class=" my-1">Rate/Unit</h5>
+                <input type="text" class="form-control mx-2" aria-label="Text input with dropdown button">
+                 <h5 class="mx-2 my-1">Amount</h5>
+                <input type="text" class="form-control mx-2" aria-label="Text input with dropdown button">
+            </div>
+
+           <div class="input-group mb-3 w-100">
+                <h5 class="my-1 right-text-width">Representative</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+           <div class="input-group mb-3 w-100">
+                <h5 class=" my-1 right-text-width">Purchase A/C</h5>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+    </div>
+
+     </main>
+
+     <footer>
+  <div class="BlankDiv mx-auto p-2" >
+    </div>
+    <br>
+
+    <div class="input-group mb-3 d-flex px-2">
+        <h5 class="mx-4 my-1">Comments</h5>
+        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        <input type="text" class="form-control mx-2 InputBackGroundColor" aria-label="Text input with dropdown button">
+    </div> <br>
+
+  <div class="d-flex px-5">
+    <div class="w-50">
+    <button type="button" class="btn btn-primary"> <i class="far fa-save"></i> Save</button>
+    <button type="button" class="btn btn-secondary"> <i class="fas fa-edit"></i> Edit</button>
+    <button type="button" class="btn btn-success"> <i class="fas fa-calendar-times"></i> Delete</button>
+    <button type="button" class="btn btn-danger"> <i class="fas fa-plus-square"></i> New </button>
+    <button type="button" class="btn btn-warning my-3">Close</button>
+    <br>
+    <button type="button" class="btn btn-dark">TC</button><br> <br>
+    </div>
+
+    <div>
+        <div class="input-group mb-3">
+            <h5 class="mx-2 my-1 text-Width">Add/Less</h5>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+            <div class="d-flex">
+                <button type="button" class="btn btn-dark ms-2">Add</button>
+                <button type="button" class="btn btn-dark mx-2">Edit</button>
+                <button type="button" class="btn btn-dark">Show</button>
+            </div>
+        </div>
+        <div class="input-group mb-3">
+            <h5 class="mx-2 my-1 text-Width">Total</h5>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        <div class="input-group mb-3">
+            <h5 class="mx-2 my-1 text-Width">Payment</h5>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        <div class="input-group mb-3">
+            <h5 class="mx-2 my-1 text-Width">Credit A/C</h5>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+        </div>
+        <div class="input-group mb-3">
+            <h5 class="mx-2 my-1 text-Width ">Batch No</h5>
+            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="button-dropdown" data-bs-toggle="dropdown" >
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+              </ul>
+              <div>
+                <button type="button" class="btn btn-primary mx-2"> <i class="fab fa-paypal text-dark"></i> Payment</button>
+           </div>
+
+        </div><br> <br>
+    </div>
+
+  </div>
+
+     </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="javascript.js"></script>
+
+</body>
+</html>
