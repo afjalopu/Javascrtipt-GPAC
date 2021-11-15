@@ -36,3 +36,12 @@
    left: -290px;
    display: none;
 }
+.MainMargin{
+    margin-top: 7px;
+}
+.inputMargin{
+    margin-left: 44px;
+}
+.inputWidth{
+    width: 20px;
+}

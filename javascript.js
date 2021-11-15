@@ -732,29 +732,36 @@ var myArray = [
 
 const dataList = () => {
     var arrSports = new Array();
+    // Creating a New Array
 
     fetch("./products.JSON")
         .then((res) => res.json())
         .then((data) => allProductData(data));
+        // Calling The JSON data File   
 
     const allProductData = (DataList) => {
         const allProducts = DataList.map((Data) => Data);
+        // Taking the Single Array Using Map
+
         for (const Product of allProducts) {
             arrSports.push(Product.company);
-        }
+            // Pushing the Data in ArrSports Array
+         }
 
         for (var i = 0; i < arrSports.length; i++) {
             document.getElementById("DataListSports").innerHTML +=
                 '<option value="' + arrSports[i] + '"> </option>';
+                // Showing the List of All Company Name
         }
     };
 };
 
 BuildTable(myArray);
-// CheckData(myArray)
 
 function BuildTable(data) {
     var table = document.getElementById("myTable");
+    //  taking the Table Id  
+
     for (var i = 0; i < data.length; i++) {
         var row = `
     <tr>
@@ -763,23 +770,29 @@ function BuildTable(data) {
                <td>${data[i].company} </td>
                <td>${data[i].email} </td>
             </tr>`;
+            // Creating the Table Dynamically
         table.innerHTML += row;
     }
 }
-
 
 let Modal = document.getElementById("TableDisplay");
 let input = document.querySelector("#InputField");
 
 input.addEventListener("keyup", (e) => {
+    // Enter Button Binary value
     if (e.keyCode === 13) {
         const userInputData = e.target.value;
+        // Taking the Input value
 
-        // Filter data
+        // Filtering data
      const foundData = myArray.filter((data) => data.company === userInputData);
 
         if (foundData.length === 0) {
+
+         var OpenWindows =  window.open('http://127.0.0.1:5500/Output.html')
+         if( OpenWindows == true ){
             Modal.style.display = "block";
+         }
         }
     }
 });
